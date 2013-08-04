@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+from BeautifulSoup import BeautifulSoup
 import urllib2
 
 def wiki(components): # !wiki <search term>

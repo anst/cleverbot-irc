@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from bs4 import BeautifulSoup
+from BeautifulSoup import BeautifulStoneSoup
 import urllib
 
 def weather(components): # !weather <city> or !weather <city>, <state or country>
@@ -45,7 +45,7 @@ def get_weather(location):
     except:
         return 'Could not open the page!'
     else:
-        soup = BeautifulSoup(page,features="xml")
+        soup = BeautifulStoneSoup(page)
         conditions['location'] = soup.find('full').contents[0]
 
         if 2 >= len(conditions['location']):

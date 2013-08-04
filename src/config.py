@@ -4,26 +4,26 @@ import time
 
 # some commands can be executed only if the user's nick is found in this list
 owner = list(set([
-    'dougpiston',
+    'andy___',
 ]))
 
 owner_email = {
-    'asparks': 'asparks914@gmail.com',
+    'andy': 'a@fbi.gov',
 }
 
 # server to connect to
-server = 'chat.freenode.net'
+server = 'irc.freenode.net'
 # server's port
 port = 6667
 
 # bot's nicknames
-nicks = list(set(['Natalya']))
+nicks = list(set(['cleaverbot']))
 # bot's real name
-real_name = 'Natalya'
+real_name = 'cleverbot'
 
 # channels to join on startup
 channels = list(set([
-    '#xenapiadminproject',
+    '#',
 ]))
 
 cmds = {
@@ -37,6 +37,7 @@ cmds = {
 
     # normal commands list, the ones that are accessible to any user
     'user': list(set([
+        'task',
         'wiki',
         'answer',
         'about',
@@ -46,8 +47,8 @@ cmds = {
         'mball',
         'uptime',
         'so',
-        'website',
-	'git' ,
+        'twitter',
+        'cb',
     ])),
 
     # commands list that the bot will execute even if a human didn't request an
